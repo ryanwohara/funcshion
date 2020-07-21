@@ -12,7 +12,7 @@ BEGIN {
   system("mkdir -p " outputDirectory)
 }
 
-match($0, /^(func(tion)?)? ?[a-zA-Z]+ ?(\(\.*\))? ?{/) {
+match($0, /^(func(tion)?)? ?[a-zA-Z_][a-zA-Z0-9_]* ?(\(\.*\))? ?{/) {
   if ( match($1, /func(tion)?/) ) {
     functionName = $2
   }
