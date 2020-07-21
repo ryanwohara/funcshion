@@ -1,6 +1,10 @@
 # Funcshion
 
+## Description
+
 Given a Bash script with functions declared, funcshion will create one file per function. Each file contains the full function and is named after the (lowercased) function.
+
+## Warnings
 
 Please note this script does make assumptions.
 1. Functions can be declared in the following ways with no indentation before it:
@@ -9,6 +13,8 @@ Please note this script does make assumptions.
    3. Name() {}
 2. The opening and closing brackets of the function must have no indentation.
    1. The body can be indented as much as you want.
+
+## Usage
 
 To utilize the tool just pass the script to awk:
 
