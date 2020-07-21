@@ -1,11 +1,10 @@
 # Funcshion
 
+<img src="./funcshion.svg" style="max-width: 50%">
+
 ## Description
 
 Given a Bash script with functions declared, funcshion will create one file per function. Each file contains the full function and is named after the (lowercased) function.
-
-![Funcshion.svg](./funcshion.svg)
-<img src="./funcshion.svg">
 
 ## Warnings
 
