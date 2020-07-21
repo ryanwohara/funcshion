@@ -1,7 +1,8 @@
 BEGIN {
-  split(ARGV[ARGC-1], directoryNameSplit, ".")
+  split(ARGV[ARGC-1], directoryNameSplit, "/")
+  split(directoryNameSplit[length(directoryNameSplit)], fileNameSplit, ".")
   dirPath = length(path) ? path : ENVIRON["PWD"]
-  dirName = length(subdir) ? subdir : directoryNameSplit[1]
+  dirName = length(subdir) ? subdir : fileNameSplit[1]
   outputDirectory = dirPath "/" dirName
   system("mkdir -p " outputDirectory)
 }
