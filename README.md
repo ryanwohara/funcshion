@@ -1,6 +1,6 @@
 # Funcshion
 
-<img src="./funcshion.svg" width="50%">
+<img src="./funcshion.png" width="50%">
 
 ## Description
 
